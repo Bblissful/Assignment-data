@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern's data</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>Assignment scores</h1>
+
+    <table>
+        <tr>
+        <th>S/N</th>
+        <th></th>
+        <th>NAME</th>
+        <th>COMMENT</th>
+        <th>AV. SCORE</th>
+        <th></th>
+        </tr>
+        <tr>
+        <td>1.</td>
+        <td><img src="images/IMG_1073.jpeg" alt="picture"></td>
+        <td> Edeh Blessing</td>
+        <td>Frontend developer, Committed and consistent with assignments but has 1 strike</td>
+        <td> 71%</td>
+        <td> <button class="accordion">details </button>
+        <div class="details">
+        <ol> 
+          <li>week 1: 77%</li>
+        <li>week 2: 56%</li>
+        <li>week 3: 67%</li>
+        <li>week 4: 88%</li></ol>
+       </div> </td>
+        </tr>
+        
+        <tr>
+            <td>2.</td>
+            <td><img src="images/images (54).jpeg" alt="picture"></td>
+            <td> Orji Christy</td>
+            <td>Backend developer, Partially committed, consistent with assignments but has 3 strikes, attendance is also poor</td>
+            <td>51%</td>
+            <td> <button class="accordion">details </button>
+              <div class="details">
+              <ol> 
+                <li>week 1: 47%</li>
+              <li>week 2: 56%</li>
+              <li>week 3: 37%</li>
+              <li>week 4: 78%</li></ol>
+             </div> </td>
+            </tr>
+
+            <tr>
+              <td>3.</td>
+              <td><img src="images/IMG_1073.jpeg" alt="picture"></td>
+              <td> Okafor Angela</td>
+              <td>Product Designer, Committed and consistent with assignments, has no strike and has a moderate attendance</td>
+              <td>81%</td>
+              <td> <button class="accordion">details </button>
+                <div class="details">
+                <ol> 
+                  <li>week 1: 77%</li>
+                <li>week 2: 56%</li>
+                <li>week 3: 67%</li>
+                <li>week 4: 88%</li></ol>
+               </div> </td>
+              </tr>
+
+              <tr>
+                <td>4.</td>
+                <td><img src="images/penguin.jpg" alt="picture"></td>
+                <td> Tunde Beauty</td>
+                <td>Frontend developer, Committed and consistent with assignments but has 3 strikes, Attendance is poor</td>
+                <td>65%</td>
+                <td> <button class="accordion">details </button>
+                  <div class="details">
+                  <ol> 
+                    <li>week 1: 57%</li>
+                  <li>week 2: 56%</li>
+                  <li>week 3: 67%</li>
+                  <li>week 4: 78%</li></ol>
+                 </div> </td>
+                </tr>
+
+                <tr>
+                  <td>5.</td>
+                  <td><img src="images/ProfilePicture (2).png" alt="picture"></td>
+                  <td>Ade Dera</td>
+                  <td>Web 3 developer, Committed and consistent with assignments but has 1 strike</td>
+                  <td>89%</td>
+                  <td> <button class="accordion">details </button>
+                    <div class="details">
+                    <ol> 
+                      <li>week 1: 77%</li>
+                    <li>week 2: 56%</li>
+                    <li>week 3: 67%</li>
+                    <li>week 4: 88%</li></ol>
+                   </div> </td>
+                  </tr>
+    </table>
+<script>
+  var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+    
+</body>
+</html>
